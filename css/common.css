@@ -1,0 +1,313 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;1,300&family=Open+Sans:ital,wght@0,400;0,500;0,700;0,800;1,300&family=Sarina&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+/*Variables*/
+:root{
+    /*colors*/
+    --azul-primary: #0299c1;
+    --azul-secondary: #103349;
+    --azul-terciary: #25c0d4;
+    --yellow: #f7b714;
+    --verde-wwp: #24d366;
+    --red-danger: #ff4040;
+    --light-font-color: #fff;
+    --dark-font-color: #104059;
+
+    /*paddings & margins*/
+    --padding-1: 24px;
+    --padding-2: 28px;
+    --padding-3: 32px;
+    --padding-4: 40px;
+    --padding-5: 48px;
+
+    --margin-1: 1rem;
+    --margin-2: 2rem;
+    --margin-3: 30rem;
+    --margin-4: 40px;
+    --margin-5: 48px;
+}
+.btn-yellow{
+    background-color: var(--yellow);
+}
+.btn-green{
+    background-color: var(--verde-wwp);
+}
+.btn-promo{
+    background-color: #f75308;
+    font-size: 28px;
+    width:300px ;
+}
+.btn-saber-mais{
+    background-color: var(--red-danger);
+    font-size: 28px;
+}
+.btn{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--light-font-color);
+    text-transform: uppercase;    
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.btn:hover{
+    background-color: var(--azul-secondary);
+    color: var(--yellow);
+    transition: all .5s ease-in-out;
+}
+
+.whats{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--verde-wwp);
+    margin-left: -20px;
+}
+.bi-whatsapp{
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;    
+    height: 20px;
+    color: #fff;
+}
+/*header*/
+body{
+    background-color: #abdfdf;
+}
+header{
+    background-color: var(--azul-primary);   
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    max-width: 980px;
+    margin: 0 auto;
+    padding-top:10px ;
+}
+.contato-cab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    color: var(--light-font-color);    
+}
+.contato-cab .whats{
+    margin-top: -10px;
+}
+.contato-cab h3{
+   font-size: 16px;
+     
+}
+.contato-cab span {
+    font-size: 12px;
+}
+.contato-cab span :nth-child(1){
+    font-size: 16px;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.cab{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-cab img{
+    width: 40vw;
+    max-width:320px;
+    margin: -45px;
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--margin-2);
+    margin-top: var(--margin-2);
+    gap: 28px;
+}
+
+.nav-bar ul li a{
+    color: var(--light-font-color);
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+}
+.nav-bar ul li a:hover{
+    color: var(--azul-secondary);
+    transition: all .3s ease-in-out;
+}
+
+.promo-menu{
+    display: flex;
+    gap: 24px;
+}
+
+.hamb{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 45px;
+    padding: 5px 10px;
+    border-radius: 5px;    
+    background-color: var(--azul-secondary);
+    cursor: pointer;
+    
+}
+.hamb-line{
+    width: 100%;
+    background-color: var(--light-font-color);
+    height: 3px;
+    border-radius: 2px;
+    
+
+}
+/*Footer*/
+footer{
+    background-color: var(--azul-primary);
+    text-align: center;
+}
+.hashtag{
+    font-family: "sarina";
+    color: var(--light-font-color);
+    font-size: 2.5rem;
+    padding-top: 20px;
+}
+footer span{
+    position: relative;
+    content: "";
+    height: 2px;
+    width: 60px;
+    background-color: var(--light-font-color);
+    margin-bottom: 10px;
+}
+.footer-infos{
+    display: flex;    
+    max-width: 980px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 40px;
+    margin: 0 auto;
+    color: var(--light-font-color);
+}
+.footer-infos p{
+    font-size: 22px;
+    line-height: 1.5;
+}
+.reserva{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    min-width: 220px;
+}
+.reserva a{
+    color: var(--light-font-color);
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.foot-whats{
+    display: flex;    
+}
+.foot-whats i{
+    padding-left: 10px;
+}
+/*redes sociais footer*/
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+.redes-sociais .logo-club p{
+    font-size: 10px;
+}
+.redes-sociais-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+.redes-sociais-icons i{
+    font-size: 28px;
+}
+.redes-sociais-icons svg{
+    position: relative;
+    top: 7px;
+    width: 40px;
+    fill: var(--light-font-color);
+}
+
+.tel-recep a, p{
+    font-size: 16px;
+    margin-bottom: -5px;
+}
+.logo-club img{
+    width: 200px;
+    margin-left: -15px;
+    
+}
+.trabalhe-conosco{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.trabalhe-conosco .asign{
+    margin-top: 40px;
+    font-size: 12px;
+    max-width: 250px;
+    text-align: left;
+}
+.trabalhe-conosco a{
+    color: var(--light-font-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+.trabalhe-conosco p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.covid{
+    margin-top: 44px;
+    font-weight: bold;
+}
+.site-seguro{
+    margin-top: 40px;
+    padding-bottom: 40px;    
+}
+.site-seguro img{
+    width: 240px;
+}
+@media (max-width:600px){
+    .footer-infos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    footer span{
+        width: 100%;
+        align-self: center;
+        margin: 20px 0;
+    }
+    .reserva, .redes-sociais, .trabalhe-conosco {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-club img{
+        margin-left: 0;
+    }
+}

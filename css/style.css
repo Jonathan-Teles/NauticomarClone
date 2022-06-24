@@ -1,0 +1,323 @@
+@import "./common.css";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*Banner*/
+.banner{
+    height: 550px;      
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner01{
+    background-image: url("../assets/home/banner-full/banner-desktop-01.jpg");
+}
+.banner02{
+    background-image: url("../assets/home/banner-full/banner-desktop-2.jpg");
+}
+.banner03{
+    background-image: url("../assets/home/banner-full/BANNER-VERÃO-2020-SITE.jpg");
+}
+
+/*counter*/
+.display{
+    position: relative;
+    top: -5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 820px;
+    background-color: #f75308;
+    border-radius: 15px;
+    margin: 0 auto;
+    color: var(--light-font-color);
+    padding: 20px;
+    z-index: 100;
+}
+
+#span-count{
+    display: inline-block;
+    content: "";
+    width: 3px;
+    height: 120px;
+    margin: 0 18px;
+    background-color: var(--light-font-color);
+}
+
+
+.title{
+    max-width: 420px;
+}
+.title h1{
+    font-size: 28px;
+}
+.counter{
+    display: block;
+    text-align: center;
+}
+
+.squares{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.square{    
+    text-align: center;
+    color: #f75308;
+    width: 60px;
+    height: 65px;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color:var(--light-font-color);
+    border-radius: 10px;
+}
+
+.label{
+    display: flex;    
+    justify-content: space-around;
+    font-weight: bold;
+    color: #f75308;
+    background-color: var(--light-font-color);
+    margin: 10px 15px;
+    height: 25px;
+}
+
+/*main*/
+.home-desc{
+    max-width: 820px;
+    margin: auto;    
+}
+.home-desc h2{
+    margin-bottom: 20px;
+}
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: -224px;
+    padding-top: 220px;
+    max-width: 980px;
+    margin: auto;
+    background-image: url(../assets/home/bg-repeater.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;    
+}
+.card-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.img-card-principal{
+    background-image: url(../assets/home/cards-promo/card-principal-home.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 350px;
+    border-radius: 15px;
+}
+.btn-promo{
+    position: relative;
+    top: 30px;    
+}
+.btn-saber-mais{
+    position: relative;
+    bottom: 30px;
+}
+
+/*Repeater*/
+.repeater{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 980px;
+
+    padding: 20px;
+    margin: auto;
+}
+.btn-card{
+    position: relative;
+    top: 30px;
+    width: 220px;
+    background-color: var(--azul-primary);
+    font-weight: bold;
+    font-size: 24px;
+}
+.selo-preco{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    bottom: 40px;
+    padding: 10px 20px;
+    background-color: var(--azul-secondary);
+    color: var(--light-font-color);
+}
+.selo-preco p{
+    margin-top: 10px;
+    min-width: 100px;  
+    font-size: 12px;  
+}
+.preco h4{
+    font-size: 30px;
+    font-weight: bold;
+}
+.preco span{
+    font-size: 16px;
+    font-weight: bold;
+}
+.preco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul-primary);
+    border-radius: 5px;    
+    padding: 5px 15px;
+}
+.card-repeater{
+    margin-top: -45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:900px){
+    .home-desc{
+        max-width: 80vw;
+        margin: auto;
+    }
+}
+
+
+@media (max-width:600px){
+    /*Header - NavBar*/
+    .header{
+        padding-bottom: 40px;
+        min-width: 400px;
+        padding-right: 40px;
+        justify-content: center;       
+    }
+    .nav-bar{
+        display: none;
+    }
+    .cab{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contato-cab h3, .contato-cab span{
+        display: none;
+    }
+    .logo-cab img{
+        position: relative;
+        width: 250px;
+        margin-top: 0px;
+        margin-bottom: 0px;        
+        left: -60px;
+
+    }
+    .hamb{     
+        position: absolute;         
+        height: 40px;
+        top: 70px;
+        
+    }
+    .contato-cab .btn{
+        font-size: 12px;
+    }
+    .promo-menu{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: flex-end;
+             
+        
+    }
+    .btn-yellow{              
+        font-size: 12px;
+        height: 40px;        
+        
+    }
+    .contato-cab .btn-green{        
+        height: 40px;        
+        
+    }    
+
+    /*banner*/
+    .banner01{
+        background-image: url("../assets/home/banner-full/banner-mobile01.jpg");        
+        width: 100vw;
+        min-width: 320px;
+    }
+    .banner02{
+        background-image: url("../assets/home/banner-full/MOBILE/ALL-INCLISIVE.jpg");        
+        width: 100vw;
+        min-width: 320px;
+    }    
+    .banner03{
+        background-image: url("../assets/home/banner-full/MOBILE/STANDUP-PADDLE.jpg");        
+        width: 100vw;
+        min-width: 320px;
+    }
+
+    /*Display Counter*/
+    .display{
+        flex-direction: column;
+        border-radius: 0;
+        text-align: center;
+        padding: 30px;
+        top: 0;
+    }
+    #span-count{       
+        width: 100%;
+        height: 3px;
+        margin: 18px 20px;
+        
+    }
+
+
+    /*Card Promo*/
+    .img-card-principal{
+        background-image: url(../assets/home/cards-promo/card-principal-mobile.png);
+        background-size: cover;
+        background-position: center;
+        margin: 0 40px;  
+        width: 80vw;      
+        max-height: 400px;
+        border-radius: 15px;
+    }
+    .btn-promo{
+        width: 240px;
+    }
+
+    .home-desc{
+        padding-top: 40px;
+        width: 80vw;
+        margin: auto ;    
+    }
+    .home-desc h2{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:345px){
+    .btns{
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        padding-right: 40px;
+    }
+
+}
