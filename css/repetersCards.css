@@ -48,10 +48,64 @@
     border-radius: 5px;    
     padding: 5px 15px;
 }
-.card-repeater{
+.card-repeater{    
     margin-top: -45px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+/* rotate effect */
+.baseCard{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    perspective: 700px;
+  
+}
+.back, .front{
+    position: absolute;
+    transition: 700ms;
+}
+
+.front{
+    z-index: 1;
+}
+
+.back{
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+}
+
+.baseCard:hover .front{
+    transform: rotateY(180deg);
+    z-index: 0;    
+    opacity: 0;
+}
+
+.baseCard:hover .back{
+    transform: rotateY(0);
+    z-index: 1;
+}
+
+.baseCard .btn-promo{
+    top: -50%;
+    width: 215px;
+}
+
+.back .img{
+    position: relative;
+    z-index: -1;
+}
+
+.back .desc-card{
+    position: absolute;
+    width: 230px;
+    text-align: justify;
+    margin: 40px auto;
+    left: 50%;
+    transform: translate(-50%);
+    color: var(--azul-secondary);
 }
