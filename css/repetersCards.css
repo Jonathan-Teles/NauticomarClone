@@ -1,0 +1,57 @@
+.repeater{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 980px;
+
+    padding: 20px;
+    margin: auto;
+}
+.btn-card{
+    position: relative;
+    top: 30px;
+    width: 220px;
+    background-color: var(--azul-primary);
+    font-weight: bold;
+    font-size: 24px;
+}
+.selo-preco{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    bottom: 40px;
+    padding: 10px 20px;
+    background-color: var(--azul-secondary);
+    color: var(--light-font-color);
+}
+.selo-preco p{
+    margin-top: 10px;
+    min-width: 100px;  
+    font-size: 12px;  
+}
+.preco h4{
+    font-size: 30px;
+    font-weight: bold;
+}
+.preco span{
+    font-size: 16px;
+    font-weight: bold;
+}
+.preco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul-primary);
+    border-radius: 5px;    
+    padding: 5px 15px;
+}
+.card-repeater{
+    margin-top: -45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
