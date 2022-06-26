@@ -8,7 +8,8 @@
     background: cover no-repeat center;
     margin: 0 auto;
 }
-.contactMain h1, .contact h3{
+.contactMain h1, 
+.contact h3{
     text-align: center;
     font-family: montserrat;
     font-weight: 600;
@@ -50,7 +51,8 @@ form{
     margin-top: 1.5rem;
 }
 
-form input, textarea{
+form input, 
+textarea{
     width: 100%;
     background-color: var(--azul-primary);
     border: none;
@@ -59,12 +61,61 @@ form input, textarea{
     font-size: .9em;
     border-radius: .5em;
 }
-form input::placeholder, textarea::placeholder{
+form input::placeholder, 
+textarea::placeholder{
     color: #fff    
 }
+
 form .btn{
     background-color: var(--azul-secondary);
     align-self: flex-end;
     padding: .2em 1em;
     margin-bottom: 2em;
+}
+
+.clubMapContact{
+    display: flex;
+    margin: 0  auto;
+    max-width: 980px;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+    align-items: center;
+}
+
+.clubMapContact h3{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--azul-primary);
+    text-align: left;
+}
+.clubMapContact p{
+    font-size: .8rem;
+    color: var(--azul-primary);
+}
+.clubMapContact a{
+    text-decoration: none;
+    color: var(--azul-primary);
+}
+
+.clubMapContact i{
+    font-size: 1.5rem;
+    color: var(--azul-primary);
+}
+
+.cont{
+    display: flex;
+    gap: .5rem;
+}
+
+.directContacts{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;    
+}
+.socialIcons{
+    position: relative;
+    display: flex;
+    gap:.5rem;
+    bottom:-20px;
+    
 }
