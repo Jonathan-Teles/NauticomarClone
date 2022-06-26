@@ -98,7 +98,7 @@
 .home-desc h2{
     margin-bottom: 20px;
 }
-main{
+.homeMain{
     position: relative;
     display: flex;
     flex-direction: column;

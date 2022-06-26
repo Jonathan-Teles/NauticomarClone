@@ -1,0 +1,56 @@
+.contactMain{
+    background-color: #fff;
+}
+.maps{
+    background-image: url(../assets/contact/Google-Maps.png);
+    max-width:980px;
+    height: 320px;
+    background: cover no-repeat center;
+    margin: 0 auto;
+}
+.contact h1, .contact h3{
+    text-align: center;
+    font-family: montserrat;
+    font-weight: 600;
+    color: var(--azul-secondary);
+}
+.contact h1{
+    margin-top: 1.5rem;
+}
+.contact h3{
+    font-size: 1.2em;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    margin: 0 auto;
+    gap: .5em;
+    margin-top: 1.5rem;
+}
+
+form input, textarea{
+    width: 100%;
+    background-color: var(--azul-primary);
+    border: none;
+    color: #fff;
+    padding: .2rem 1rem;
+    font-size: .9em;
+    border-radius: .5em;
+}
+form input::placeholder, textarea::placeholder{
+    color: #fff    
+}
+form .btn{
+    background-color: var(--azul-secondary);
+    align-self: flex-end;
+    padding: .2em 1em;
+    margin-bottom: 2em;
+}
