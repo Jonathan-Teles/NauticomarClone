@@ -1,0 +1,10 @@
+@import  "./common.css"; 
+#formCard{
+    display: flex;
+    flex-direction: column;    
+    max-width: 600px;
+    padding: 1rem;
+    gap: .5rem;
+    margin: 1rem auto;
+    background-color: var(--);
+}
