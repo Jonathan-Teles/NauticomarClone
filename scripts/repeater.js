@@ -42,7 +42,7 @@ function insertCard(newCard){
     //tag preço
     let tagPrice = document.createElement('div')
     tagPrice.className = "preco"
-    tagPrice.innerHTML = "<h4><span>R$</span> " + newCard.price + "</h4>"
+    tagPrice.innerHTML = `<h4><span>R$</span>${newCard.price}</h4>`
     //colocando a tap preço dentro da div preço
     divPrice.appendChild(tagPrice)
     //inserindo todos os elementos dentro do cardFront
@@ -80,8 +80,8 @@ function insertCard(newCard){
     bgback.setAttribute('src', '../assets/home/cards-promo/back-card.webp')
 
     //inserindo elementod na div img
-    imgback.appendChild(desctext)
     imgback.appendChild(bgback)
+    imgback.appendChild(desctext)    
     cardBack.appendChild(imgback)
 
     //inserindo cardback no cardBase
@@ -99,7 +99,7 @@ function insertCard(newCard){
     let reserveButton = document.createElement('a')
     reserveButton.className = "btn btn-promo"
     reserveButton.innerText = "Reserve"
-    reserveButton.setAttribute('href', "newCard.urlFromButton")
+    reserveButton.href = newCard.urlButton
 
     divReservation.appendChild(reserveButton)
     cardBack.appendChild(divReservation)
