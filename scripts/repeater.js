@@ -54,6 +54,35 @@ function insertCard(newCard){
     baseCard.appendChild(cardFront)
 
 
+    //criando cardBack
+    let cardBack = document.createElement('div')
+    cardBack.className = "card-repeater back"
+    //inserindo btn Name 
+    let btnBackName = document.createElement('a')
+    btnBackName.className = "btn btn-card"
+    btnBackName.innerText = newCard.cardName
+
+    cardBack.appendChild(btnBackName)
+
+
+
+
+    let imgback = document.createElement('div')
+    imgback.className = "img"
+    
+    let desctext = document.createElement('p')
+    desctext.className = "desc-card"
+    desctext.innerText = newCard.cardDescription
+
+    let bgback = document.createElement('img')
+    bgback.setAttribute('src', '../assets/home/cards-promo/back-card.webp')
+
+    imgback.appendChild(desctext)
+    imgback.appendChild(bgback)
+    cardBack.appendChild(imgback)
+
+    baseCard.appendChild(cardBack)
+
     let repeater = document.querySelector('.repeater')
     repeater.appendChild(baseCard)
 

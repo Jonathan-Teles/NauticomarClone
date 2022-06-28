@@ -1,10 +1,23 @@
-@import  "./common.css"; 
+@import "./common.css"; 
+
 #formCard{
     display: flex;
     flex-direction: column;    
     max-width: 600px;
-    padding: 1rem;
+    padding: 1.5rem;
     gap: .5rem;
     margin: 1rem auto;
-    background-color: var(--);
+    background-color: var(--azul-primary);
+    border-radius: 1rem;
+    padding-bottom: 3.3rem;
+    margin-bottom: 3rem;
+}
+#formCard input, #formCard textarea{
+    border: none;
+    border-radius: .3rem;
+    padding: .3rem;
+}
+#formCard button{
+    align-self: center;
+    margin-top: -1rem ;    
 }
