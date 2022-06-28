@@ -1,14 +1,14 @@
 function addCard() {
     event.preventDefault()
     //mapeando os inputs necessários
-    let cardName = document.querySelector('input[name="monthName"]').value
-    let cardPrice = document.querySelector('input[name="monthPrice"]').value
-    let cardDescription = document.querySelector('textarea[name="descriptionCard"]').value
-    let frontCardImg = document.querySelector('input[name="imageFrontCard"]').value
+    let monthName = document.querySelector('input[name="monthName"]').value
+    let price = document.querySelector('input[name="monthPrice"]').value
+    let descriptionCard = document.querySelector('textarea[name="descriptionCard"]').value
+    let imgFrontCard = document.querySelector('input[name="imageFrontCard"]').value
     let TextButton = document.querySelector('input[name="textButton"]').value
-    let urlFromButton = document.querySelector('input[name="urlButton"]').value
+    let urlButton = document.querySelector('input[name="urlButton"]').value
 
-    let newCard = new card (cardName, cardPrice, cardDescription, frontCardImg, TextButton, urlFromButton)
+    let newCard = new card (monthName, price, descriptionCard, imgFrontCard, TextButton, urlButton)
 
     this.insertCard(newCard)
 
@@ -26,12 +26,12 @@ function insertCard(newCard){
 
     let btnCardName = document.createElement('a')
     btnCardName.className = "btn btn-card"
-    btnCardName.innerText = newCard.cardName
+    btnCardName.innerText = newCard.monthName
     
     //div imagem
     let imgDiv = document.createElement('div')
     imgDiv.className = "img"
-    imgDiv.innerHTML = "<img src="+ newCard.frontCardImg +">"           
+    imgDiv.innerHTML = '<img src="newCard.frontCardImg">'           
 
     //div preço
     let divPrice = document.createElement('div')
@@ -42,7 +42,7 @@ function insertCard(newCard){
     //tag preço
     let tagPrice = document.createElement('div')
     tagPrice.className = "preco"
-    tagPrice.innerHTML = "<h4><span>R$</span> " + newCard.cardPrice + "</h4>"
+    tagPrice.innerHTML = "<h4><span>R$</span> " + newCard.price + "</h4>"
     //colocando a tap preço dentro da div preço
     divPrice.appendChild(tagPrice)
     //inserindo todos os elementos dentro do cardFront
@@ -60,32 +60,49 @@ function insertCard(newCard){
     //inserindo btn Name 
     let btnBackName = document.createElement('a')
     btnBackName.className = "btn btn-card"
-    btnBackName.innerText = newCard.cardName
-
+    btnBackName.innerText = newCard.monthName
+    //inserindo button no cardback
     cardBack.appendChild(btnBackName)
 
 
 
-
+    //criando a div do bg card
     let imgback = document.createElement('div')
     imgback.className = "img"
     
+    //criando elemento do texto
     let desctext = document.createElement('p')
     desctext.className = "desc-card"
-    desctext.innerText = newCard.cardDescription
-
+    desctext.innerText = newCard.descriptionCard
+    
+    //criando tag img do bg
     let bgback = document.createElement('img')
     bgback.setAttribute('src', '../assets/home/cards-promo/back-card.webp')
 
+    //inserindo elementod na div img
     imgback.appendChild(desctext)
     imgback.appendChild(bgback)
     cardBack.appendChild(imgback)
 
+    //inserindo cardback no cardBase
     baseCard.appendChild(cardBack)
 
     let repeater = document.querySelector('.repeater')
     repeater.appendChild(baseCard)
 
+
+    //criando div button reservar
+    let divReservation = document.createElement('div')
+    divReservation.className = "selo-preco"
+
+    //criando button Reserve
+    let reserveButton = document.createElement('a')
+    reserveButton.className = "btn btn-promo"
+    reserveButton.innerText = "Reserve"
+    reserveButton.setAttribute('href', "newCard.urlFromButton")
+
+    divReservation.appendChild(reserveButton)
+    cardBack.appendChild(divReservation)
     
 
     
