@@ -31,7 +31,7 @@ function insertCard(newCard){
     //div imagem
     let imgDiv = document.createElement('div')
     imgDiv.className = "img"
-    imgDiv.innerHTML = '<img src="newCard.frontCardImg">'           
+    imgDiv.innerHTML = `<img src="${newCard.frontCardImg}">`           
 
     //div preço
     let divPrice = document.createElement('div')
@@ -99,6 +99,8 @@ function insertCard(newCard){
     let reserveButton = document.createElement('a')
     reserveButton.className = "btn btn-promo"
     reserveButton.innerText = "Reserve"
+
+    //para adicionar uma url à um elemento necessário usar o metodo .href
     reserveButton.href = newCard.urlButton
 
     divReservation.appendChild(reserveButton)
