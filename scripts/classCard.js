@@ -1,5 +1,5 @@
 class card {
-    constructor(monthName,imgFrontCard , price, descriptionCard, textButton, urlButton){
+    constructor(monthName, price, imgFrontCard , descriptionCard, textButton, urlButton){
         this.monthName = monthName
         this.price = price        
         this.imgFrontCard = imgFrontCard
