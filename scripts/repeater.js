@@ -4,7 +4,7 @@ function addCard() {
     let monthName = document.querySelector('input[name="monthName"]').value
     let price = document.querySelector('input[name="monthPrice"]').value
     let descriptionCard = document.querySelector('textarea[name="descriptionCard"]').value
-    let imgFrontCard = document.querySelector('input[name="imageFrontCard"]').value
+    let imgFrontCard = document.querySelector('#img').files[0].name
     let TextButton = document.querySelector('input[name="textButton"]').value
     let urlButton = document.querySelector('input[name="urlButton"]').value
 
@@ -31,9 +31,8 @@ function insertCard(newCard){
     //div imagem
     let imgDiv = document.createElement('div')
     imgDiv.className = "img"
-
-    let imgTag = document.createElement('img')
     console.log(newCard.imgFrontCard)
+    let imgTag = document.createElement('img')    
     imgTag.src = newCard.imgFrontCard
 
     imgDiv.appendChild(imgTag)
@@ -52,8 +51,8 @@ function insertCard(newCard){
     //colocando a tap preço dentro da div preço
     divPrice.appendChild(tagPrice)
     //inserindo todos os elementos dentro do cardFront
-    cardFront.appendChild(btnCardName)
     cardFront.appendChild(imgDiv)
+    cardFront.appendChild(btnCardName)    
     cardFront.appendChild(divPrice)
 
     //inserindo cardfront no card base
