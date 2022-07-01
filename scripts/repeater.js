@@ -31,7 +31,13 @@ function insertCard(newCard){
     //div imagem
     let imgDiv = document.createElement('div')
     imgDiv.className = "img"
-    imgDiv.innerHTML = `<img src="${newCard.frontCardImg}">`           
+
+    let imgTag = document.createElement('img')
+    console.log(newCard.imgFrontCard)
+    imgTag.src = newCard.imgFrontCard
+
+    imgDiv.appendChild(imgTag)
+    //imgDiv.innerHTML = `<img src="${newCard.frontCardImg}">`           
 
     //div preço
     let divPrice = document.createElement('div')
