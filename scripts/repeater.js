@@ -8,7 +8,7 @@ function addCard() {
     let TextButton = document.querySelector('input[name="textButton"]').value
     let urlButton = document.querySelector('input[name="urlButton"]').value
 
-    let newCard = new card (monthName, price, descriptionCard, imgFrontCard, TextButton, urlButton)
+    let newCard = new card (monthName, price, imgFrontCard, descriptionCard, TextButton, urlButton)
 
     this.insertCard(newCard)
 
@@ -80,8 +80,8 @@ function insertCard(newCard){
     bgback.setAttribute('src', '../assets/home/cards-promo/back-card.webp')
 
     //inserindo elementod na div img
-    imgback.appendChild(bgback)
-    imgback.appendChild(desctext)    
+    imgback.appendChild(desctext) 
+    imgback.appendChild(bgback)       
     cardBack.appendChild(imgback)
 
     //inserindo cardback no cardBase
